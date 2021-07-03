@@ -1,0 +1,31 @@
+{
+  "name": "homework-12",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/*",
+    "predeploy": "npm run build -- --public-url /goit-js-hw-12-countries/",
+    "deploy": "master -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "lodash.debounce": "^4.0.8",
+    "material-design-icon-fonts": "^3.0.1",
+    "material-design-icons": "^3.0.1",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2"
+  },
+  "devDependencies": {
+    "@pnotify/animate": "^5.2.0",
+    "@pnotify/core": "^5.2.0",
+    "@pnotify/desktop": "^5.2.0",
+    "@pnotify/paginate": "^5.2.0"
+  }
+}

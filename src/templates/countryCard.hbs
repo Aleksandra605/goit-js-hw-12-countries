@@ -1,0 +1,17 @@
+<div class='country-card'>
+  <h3 class='country-name'>{{name}}</h3>
+  <div class='box-content'>
+    <ul class="properties-list">
+      <li>Capital: {{capital}}</p>
+      <li>Population: {{population}}</p>
+      <ul class="languages-list">Languages:
+      {{#each languages}}
+        <li>{{name}}</li>
+      {{/each}}
+    </ul>
+    </ul>
+    <div class="box-image">
+      <img src='{{flag}}' alt='Flag' width='400px' />
+    </div>
+  </div>
+</div>
