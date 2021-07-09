@@ -2175,18 +2175,18 @@ var templateFunction = _handlebars.default.template({
       return undefined;
     };
 
-    return "        <li>" + container.escapeExpression((helper = (helper = lookupProperty(helpers, "name") || (depth0 != null ? lookupProperty(depth0, "name") : depth0)) != null ? helper : container.hooks.helperMissing, typeof helper === "function" ? helper.call(depth0 != null ? depth0 : container.nullContext || {}, {
+    return "        <li>- " + container.escapeExpression((helper = (helper = lookupProperty(helpers, "name") || (depth0 != null ? lookupProperty(depth0, "name") : depth0)) != null ? helper : container.hooks.helperMissing, typeof helper === "function" ? helper.call(depth0 != null ? depth0 : container.nullContext || {}, {
       "name": "name",
       "hash": {},
       "data": data,
       "loc": {
         "start": {
           "line": 9,
-          "column": 12
+          "column": 14
         },
         "end": {
           "line": 9,
-          "column": 20
+          "column": 22
         }
       }
     }) : helper)) + "</li>\r\n";
@@ -2249,7 +2249,7 @@ var templateFunction = _handlebars.default.template({
           "column": 36
         }
       }
-    }) : helper)) + "</p>\r\n      <ul class=\"languages-list\">Languages:\r\n" + ((stack1 = lookupProperty(helpers, "each").call(alias1, depth0 != null ? lookupProperty(depth0, "languages") : depth0, {
+    }) : helper)) + "</p>\r\n      <li class=\"languages-list\">Languages:\r\n" + ((stack1 = lookupProperty(helpers, "each").call(alias1, depth0 != null ? lookupProperty(depth0, "languages") : depth0, {
       "name": "each",
       "hash": {},
       "fn": container.program(1, data, 0),
@@ -2265,7 +2265,7 @@ var templateFunction = _handlebars.default.template({
           "column": 15
         }
       }
-    })) != null ? stack1 : "") + "    </ul>\r\n    </ul>\r\n    <div class=\"box-image\">\r\n      <img src='" + alias4((helper = (helper = lookupProperty(helpers, "flag") || (depth0 != null ? lookupProperty(depth0, "flag") : depth0)) != null ? helper : alias2, _typeof(helper) === alias3 ? helper.call(alias1, {
+    })) != null ? stack1 : "") + "    </li>\r\n    </ul>\r\n    <div class=\"box-image\">\r\n      <img src='" + alias4((helper = (helper = lookupProperty(helpers, "flag") || (depth0 != null ? lookupProperty(depth0, "flag") : depth0)) != null ? helper : alias2, _typeof(helper) === alias3 ? helper.call(alias1, {
       "name": "flag",
       "hash": {},
       "data": data,
@@ -2329,18 +2329,18 @@ var templateFunction = _handlebars.default.template({
           "column": 30
         }
       }
-    }) : helper)) + "' class='list-item'>" + alias4((helper = (helper = lookupProperty(helpers, "name") || (depth0 != null ? lookupProperty(depth0, "name") : depth0)) != null ? helper : alias2, _typeof(helper) === alias3 ? helper.call(alias1, {
+    }) : helper)) + "' class='list-item'>- " + alias4((helper = (helper = lookupProperty(helpers, "name") || (depth0 != null ? lookupProperty(depth0, "name") : depth0)) != null ? helper : alias2, _typeof(helper) === alias3 ? helper.call(alias1, {
       "name": "name",
       "hash": {},
       "data": data,
       "loc": {
         "start": {
           "line": 3,
-          "column": 50
+          "column": 52
         },
         "end": {
           "line": 3,
-          "column": 58
+          "column": 60
         }
       }
     }) : helper)) + "</li>\r\n";
@@ -2882,7 +2882,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63580" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63257" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
