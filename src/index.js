@@ -11,13 +11,15 @@ input.addEventListener('input', lodashDebounce(createCountryList, 1000));
 
 function createCountryList() {
   countriesBox.innerHTML = '';
-  fetchCountries(input.value)
-    .then(renderContent)
-    .catch((error) => {
-      console.error('error', error);
-      showStackBottomRight('error');
-    })
-    .finally(() => (input.value = ''));
+  if (input.value.trim() === '') {
+    return console.log('fetch does not heppened');
+  } else
+    fetchCountries(input.value.trim())
+      .then(renderContent)
+      .catch(() => {
+        showStackBottomRight('error');
+      });
+  // .finally(() => (input.value = ''));
 }
 
 function renderCountryCard(x) {
